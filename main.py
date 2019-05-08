@@ -8,8 +8,7 @@ from api import api
 app.register_blueprint(api, '/api')
 
 app.config.update({
-    'DATABASE': os.path.join(app.root_path, 'arduino.db'),
-    'DEBUG': True,
+    'DATABASE': os.path.join(app.root_path, 'arduino.db')
 })
 
 @app.cli.command()
